@@ -2,7 +2,6 @@ package com.codedreams.hellowapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button  =  findViewById(R.id.btn_limpar);
+        button = findViewById(R.id.btn_clear);
         text = findViewById(R.id.count);
     }
 
     /**
      * format number into string
      */
-    protected String strFormat(Integer i){
+    protected String strFormat(Integer i) {
         return String.format(Locale.getDefault(), "%d", i);
     }
 
@@ -35,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
      * increment counter;
      */
     public void handleIncrement(View view) {
-        x+=1;
+        x += 1;
         text.setText(strFormat(x));
     }
 
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
      * decrement counter;
      */
     public void handleDecrement(View view) {
-        x-=1;
+        x -= 1;
         text.setText(strFormat(x));
     }
 

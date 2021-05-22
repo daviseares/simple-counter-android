@@ -4,4 +4,6 @@
     <string name="todo">TODO</string>
     <string name="clique">Clique</string>
     <string name="simple_count">Simple Count</string>
+    <string name="clear">clear</string>
+    <string name="_0">0</string>
 </resources>
